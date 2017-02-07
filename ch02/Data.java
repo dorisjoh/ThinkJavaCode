@@ -10,10 +10,10 @@ public class Data {
         int date, year;
         
         //Data assigned to Variables
-        day = "Tuesday"
-        date = 7
-        month = "February"
-        year = 2017
+        day = "Tuesday";
+        date = 7;
+        month = "February";
+        year = 2017;
         
         //Date formations
         amer = day + ", " + month + " " + date + ", " + year;
