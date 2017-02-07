@@ -1,26 +1,49 @@
 /**
  * Examples from Chapter 2.
  */
-public class Data {
+public class TimeMidnight {
 
     public static void main(String[] args) {
         
         //Variables Declard for public class "Data"
-        String day, month, amer, euro;
-        int date, year;
+        String timeCalc;
+        double hour, minute, second, midnight;
         
         //Data assigned to Variables
-        day = "Tuesday";
-        date = 7;
-        month = "February";
-        year = 2017;
+        hour = 12;
+        minute = 58;
+        second = 30;
+        midnight = 24;
         
-        //Date formations
-        amer = day + ", " + month + " " + date + ", " + year;
-        euro = day + " " + date + " " + month + " " + year;
+        //Time Calculations
+        timeCalc = (hour *3600 + minute *60 + second) - midnight;
         
-        System.out.println(amer);
-        System.out.println(euro);
+        System.out.println(timeCalc);
+ 
+      
+    }
+
+}
+
+public class TimeRemaining {
+
+    public static void main(String[] args) {
+        
+        //Variables Declard for public class "Data"
+        String timeCalc;
+        double hour, minute, second, midnight;
+        
+        //Data assigned to Variables
+        hour = 12;
+        minute = 58;
+        second = 30;
+        midnight = 24;
+        
+        //Time Calculations
+        timeCalc = (hour *60 + minute *60 + second) - midnight;
+        
+        System.out.println(timeCalc);
+ 
       
     }
 
