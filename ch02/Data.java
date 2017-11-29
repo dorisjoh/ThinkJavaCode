@@ -9,21 +9,26 @@ public class TimeFromMidnight {
         double sHour, sMinute, sSecond, mid;
         double eHour, eMinute, eSecond;
         double timeCalc1, timeCalc2, timeCalc3, perPassed1;
-        double y;
+        double y, hr, min, sec;
+        
+        //Constant Variables
+        hr = 3600;
+        min = 60;
+        sec = 1;
         
         //Data assigned to Variables
-        sHour = 16;
-        sMinute = 00;
-        sSecond = 12;
+        sHour = 16 * hr;
+        sMinute = 00 * min;
+        sSecond = 12 * sec;
         mid = 24 *3600;
         
         //Secondary Variables
-        eHour = 16;
-        eMinute = 38;
-        eSecond = 29;
+        eHour = 16 * hr;
+        eMinute = 38 * min;
+        eSecond = 29 * sec;
        
         //Time Calculations...Time Since Midnight
-        timeCalc1 = (((sHour * 3600) + (sMinute * 60) + sSecond));
+        timeCalc1 = (sHour + sMinute + sSecond);
         System.out.println("Time Since Midnight: " + timeCalc1);   
                      
          //Time Calculations...Time Until Midnight
@@ -36,7 +41,7 @@ public class TimeFromMidnight {
         System.out.println("%");
         
         //Elapsed Time...Since Beginning
-        timeCalc3 = (((eHour * 3600) + (eMinute * 60) + eSecond) - timeCalc1);
+        timeCalc3 = ((eHour + eMinute + eSecond) - timeCalc1);
         System.out.println("Time Elapsed Since Beginning this Assignment: " + timeCalc3);
         
         
